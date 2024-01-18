@@ -1,0 +1,7 @@
+{
+  "controllers": {
+    "static": {
+      "logo": "//*[contains(@src, 'logo.png')]"
+    }
+  }
+}

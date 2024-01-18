@@ -1,0 +1,11 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "cypress-xpath"],
+    "resolveJsonModule": true
+  },
+  "esModuleInterop": true
+}
