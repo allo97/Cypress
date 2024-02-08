@@ -1,7 +1,19 @@
 {
   "controllers": {
     "static": {
-      "logo": "//*[contains(@src, 'logo.png')]"
+      "logo": "//*[contains(@src, 'logo.png')]",
+      "signUpForm": "[class='signup-form']"
+    },
+    "buttons": {
+      "signUp_login": "[href='/login']",
+      "signUp_button": "[data-qa='signup-button']"
+    },
+    "text": {
+      "newUserSignUp": "New User Signup!"
+    },
+    "input": {
+      "signUpName": "[data-qa='signup-name']",
+      "signUpEmail": "[data-qa='signup-email']"
     }
   }
 }
