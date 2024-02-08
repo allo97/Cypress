@@ -2,18 +2,49 @@
   "controllers": {
     "static": {
       "logo": "//*[contains(@src, 'logo.png')]",
-      "signUpForm": "[class='signup-form']"
+      "signUpForm": "[class='signup-form']",
+      "enterAccountInformation": "//b[text()='%s']",
+      "accountDeleted": "//*[text()='Account Deleted!']"
     },
     "buttons": {
-      "signUp_login": "[href='/login']",
-      "signUp_button": "[data-qa='signup-button']"
+      "signUpLogin": "[href='/login']",
+      "signUpButton": "[data-qa='signup-button']",
+      "createAccount": "//button[contains(.,'Create Account')]",
+      "continue": "//*[@id='form']//a[contains(.,'Continue')]",
+      "deleteAccount": "//*[@href='/delete_account' ]"
     },
     "text": {
-      "newUserSignUp": "New User Signup!"
+      "newUserSignUp": "//*[text()='New User Signup!']",
+      "accountCreated": "//*[text()='Account Created!']",
+      "loggedInAs": "//a[contains(.,'Logged in as ')]"
     },
     "input": {
       "signUpName": "[data-qa='signup-name']",
-      "signUpEmail": "[data-qa='signup-email']"
+      "signUpEmail": "[data-qa='signup-email']",
+      "title": "//*[@class = 'radio-inline' and contains(.,'Mr.')]//input ",
+      "password": "//*[@id='password']",
+      "newsletter": "#newsletter",
+      "firstName": "#first_name",
+      "lastName": "#last_name",
+      "company": "#company",
+      "address1": "#address1",
+      "state": "#state",
+      "city": "#city",
+      "zipcode": "#zipcode",
+      "mobileNumber": "#mobile_number"
+    },
+    "select": {
+      "day": "#days",
+      "months": "#months",
+      "year": "#years",
+      "country": "#country"
+    },
+    "condition": {
+      "be.visible": "be.visible",
+      "have.text": "have.text"
+    },
+    "test": {
+      "loggedInAs": "//*[@id='form']//a[contains(.,'%s')]"
     }
   }
 }
