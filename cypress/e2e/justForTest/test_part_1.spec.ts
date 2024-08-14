@@ -28,4 +28,14 @@ describe("Register / login /logout users", () => {
     checker.checkIfUserCreatedAndSignUp(testUserName);
     checker.deleteAccountAndCheckIfDeleted();
   });
+
+  it("Api check", () => {
+    cy.request("GET", "https://automationexercise.com/api/productsList").then(
+      (res) => {
+        const body = JSON.parse(res.body);
+        cy.log(body);
+        expect(body.responseCode).equals(200);
+      }
+    );
+  });
 });

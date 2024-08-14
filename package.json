@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "inCloud": "npx cypress run --config-file cypress.workshop.config.js --record --key 5da10669-022b-41a3-910c-c99477f00c05 --headed"
+  },
   "dependencies": {
     "cypress": "^13.6.3",
     "cypress-xpath": "^2.0.1",
